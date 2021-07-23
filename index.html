@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="container">
+        <form class="entryForm">
+            <fieldset>
+                <label for="entryDate">Date</label>
+                <input type="date" name="entryDate" class="entryForm__date">
+            </fieldset>
+        </form>
+        <form class="entryForm">
+            <fieldset>
+                <label for="entryConcepts">Concepts</label>
+                <input type="text" name="entryConcepts" class="entryForm__concepts">
+            </fieldset>
+        </form>
+        <form class="entryForm">
+            <fieldset>
+                <label for="entryDate">Journal Entry</label>
+                <textarea name="entryJournal" rows="4" cols="50">
+                </textarea>
+            </fieldset>
+        </form>
+        <form class="entryForm">
+            <fieldset>
+                <label for="entryDate">Mood for the day</label>
+                <select name="" id="mood">
+                    <option value="volvo">yucky</option>
+                    <option value="saab">crumby</option>
+                    <option value="mercedes">dopey</option>
+                    <option value="audi">loopy</option>
+                </select>
+            </fieldset>
+            <button id="btn-record">Record those thoughts</button>
+        </form>
+        <article id="entries"></article>
+    </main>
+    
+</body>
+<script type="module" src="./scripts/main.js"></script>
+</html>
